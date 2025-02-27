@@ -158,15 +158,15 @@
     - WhitelistChameleon
 
 - type: entity
-  parent: [ClothingEyesBase, ShowSecurityIcons, BaseRestrictedContraband]
+  parent: [ClothingEyesBase, ShowSecurityIcons, BaseSecurityContraband]
   id: ClothingEyesGlassesSecurity
   name: security glasses
   description: Upgraded sunglasses that provide flash immunity and a security HUD.
   components:
   - type: Sprite
-    sprite: Clothing/Eyes/Glasses/secglasses.rsi
+    sprite: _Reserve/Entities/Clothing/Eyes/secglasses.rsi #Reserve-Glasses-Resprite
   - type: Clothing
-    sprite: Clothing/Eyes/Glasses/secglasses.rsi
+    sprite: _Reserve/Entities/Clothing/Eyes/secglasses.rsi #Reserve-Glasses-Resprite
   - type: FlashImmunity
   - type: EyeProtection
     protectionTime: 5

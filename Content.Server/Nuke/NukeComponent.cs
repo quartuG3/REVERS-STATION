@@ -25,6 +25,13 @@ namespace Content.Server.Nuke
         public int Timer = 300;
 
         /// <summary>
+        ///     If the nuke is disarmed, this sets the minimum amount of time the timer can have.
+        ///     The remaining time will reset to this value if it is below it.
+        /// </summary>
+        [DataField]
+        public int MinimumTime = 180;
+
+        /// <summary>
         ///     How long until the bomb can arm again after deactivation.
         ///     Used to prevent announcements spam.
         /// </summary>
@@ -49,7 +56,7 @@ namespace Content.Server.Nuke
         ///     How long a user must wait to disarm the bomb.
         /// </summary>
         [DataField("disarmDoafterLength")]
-        public float DisarmDoafterLength = 30.0f;
+        public float DisarmDoafterLength = 60.0f;
 
         [DataField("alertLevelOnActivate")] public string AlertLevelOnActivate = default!;
         [DataField("alertLevelOnDeactivate")] public string AlertLevelOnDeactivate = default!;
